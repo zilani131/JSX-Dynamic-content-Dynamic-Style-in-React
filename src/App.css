@@ -40,3 +40,21 @@
     transform: rotate(360deg);
   }
 }
+.player{
+  color: rgb(36, 85, 52);
+  background-color: #0d3d4b44;
+  border:  2px solid blue;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 20px;
+  margin: 10px auto;
+}
+.player2{
+  color: rgb(85, 36, 36);
+  background-color: #d6121213;
+  border:  2px solid rgb(255, 123, 0);
+  border-radius: 20px;
+  width: fit-content;
+  padding: 20px;
+  margin: 10px auto;
+}
