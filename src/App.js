@@ -6,14 +6,14 @@ const playerStyle={
   color:"blue",
   backgroundColor:"white"
 }
-const player1={name:'Sakib ul hasan',profession:'Cricketer'};
+
 const player2={name:'Afridid',profession:"Cricketer"}
 function App() {
   return (
     <div className="App">
-      <Person></Person>
-      <Person></Person>
-      <Person></Person>
+      <Person name="Afridi" profession="cricket"></Person>
+      <Person name="Skibul hasan" profession="cricket"></Person>
+      <Person name="zilnai" profession="football"></Person>
       <h2>Another component</h2>
       <Person2></Person2>
       <Person2></Person2>
@@ -21,12 +21,14 @@ function App() {
     </div>
   );
 }
-
-function Person(){
+// for component it is recommended to write the input parameter as pros
+function Person(props){
+  // we will get object for each call of the Person component
+  console.log(props)
   return (
   <div className='player'>
-    <h1>{player1.name}</h1>
-    <p>Profession:{player1.profession}</p>
+    <h1>{props.name}</h1>
+    <p>Profession:{props.profession}</p>
   </div>
   );
 }
